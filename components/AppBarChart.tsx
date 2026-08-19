@@ -6,11 +6,11 @@ import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 const chartConfig = {
   desktop: {
     label: "Desktop",
-    color: "#2563eb",
+    color: "var(--chart-1)",
   },
   mobile: {
     label: "Mobile",
-    color: "#60a5fa",
+    color: "var(--chart-2)",
   },
 } satisfies ChartConfig;
 
@@ -26,8 +26,7 @@ const chartData = [
 function AppBarChart() {
   return (
     <div>
-      <h1>Total revenue</h1>
-
+      <h1 className="text-lg font-medium mb-6">Total revenue</h1>
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
         <BarChart accessibilityLayer data={chartData}>
           <CartesianGrid vertical={false} />
