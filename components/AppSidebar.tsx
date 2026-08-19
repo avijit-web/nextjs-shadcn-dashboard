@@ -198,6 +198,14 @@ function AppSidebar() {
                     </Link>
                   </SidebarMenuSubButton>
                 </SidebarMenuSubItem>
+                <SidebarMenuSubItem>
+                  <SidebarMenuSubButton asChild>
+                    <Link href={"/#"}>
+                      <PlusIcon />
+                      Add Category
+                    </Link>
+                  </SidebarMenuSubButton>
+                </SidebarMenuSubItem>
               </SidebarMenuSub>
             </SidebarMenu>
           </SidebarGroupContent>
